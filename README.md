@@ -9,7 +9,7 @@ A modern and responsive admin dashboard built using React and Material-UI (MUI),
 - Campaign Progress: Visual representation of a campaign’s progress using a circular progress indicator.
 - Customizable UI: Easily customizable components for tailoring the dashboard to your needs.
 - Interactive Charts: Fully interactive and responsive charts that can be customized with different data sources.
-Technologies Used
+## Technologies Used
 - React: JavaScript library for building dynamic UIs.
 - Material-UI (MUI): React components for faster and easier web development with Material Design.
 - React Hooks: Used to manage state and side-effects in functional components.
@@ -19,47 +19,52 @@ Technologies Used
 ## Project Structure
 
 Copy code
-/src
-  /components
-    - Header.js         // The header with the dashboard title and description
-    - StatBox.js        // A component to show key business stats (emails, sales, etc.)
-    - LineChart.js       // Displays revenue or other trend data in a line chart
-    - BarChart.js        // Visualizes sales quantity data in a bar chart
-    - GeographyChart.js  // Shows traffic or other region-based data
-    - ProgressCircle.js  // Circular progress bar to show campaign progress
-  /data
-    - mockData.js        // Sample data for transactions and charts
-  /theme
-    - theme.js           // Custom theme settings for the application
-  App.js                  // Main app component that holds the dashboard layout
-  index.js                // Entry point for the application
-Key Files and Folders:
+    
+    /src
+      /components
+        - Header.js         // The header with the dashboard title and description
+        - StatBox.js        // A component to show key business stats (emails, sales, etc.)
+        - LineChart.js       // Displays revenue or other trend data in a line chart
+        - BarChart.js        // Visualizes sales quantity data in a bar chart
+        - GeographyChart.js  // Shows traffic or other region-based data
+        - ProgressCircle.js  // Circular progress bar to show campaign progress
+      /data
+        - mockData.js        // Sample data for transactions and charts
+      /theme
+        - theme.js           // Custom theme settings for the application
+      App.js                  // Main app component that holds the dashboard layout
+      index.js                // Entry point for the application
+## Key Files and Folders:
 /components: Contains reusable UI components like stat boxes, charts, and progress circles.
 /data: Holds the mock data used in the dashboard (you can replace this with real data from an API).
 /theme: Custom theme configuration for consistent styling (colors, typography, etc.).
 App.js: Contains the main layout of the dashboard and integrates various components.
 index.js: The entry point to your React application.
-Installation
+## Installation
 1. Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/react-admin-dashboard.git
-2. Navigate into the project directory:
+
+        git clone https://github.com/your-username/react-admin-dashboard.git
+3. Navigate into the project directory:
 bash
 Copy code
-cd react-admin-dashboard
-3. Install dependencies:
+
+        cd react-admin-dashboard
+5. Install dependencies:
 bash
 Copy code
-npm install
-4. Start the development server:
+
+        npm install
+7. Start the development server:
 bash
 Copy code
-npm start
+
+        npm start
 The app will be available at http://localhost:3000.
 
-## Usage
-Key Features of the Dashboard:
+# Usage
+## Key Features of the Dashboard:
 StatBoxes: Displays key statistics such as emails sent, sales obtained, and traffic received in a visually appealing format.
 Charts: The dashboard features interactive charts:
 LineChart: Displays trends in revenue or other data over time.
@@ -85,38 +90,41 @@ ProgressCircle
 Purpose: A circular progress indicator used to show the completion of a task or progress of a campaign.
 Props:
 size: The size of the circle (can be customized based on usage).
-Customization
+# Customization
 Add New Metrics: To add new stat boxes, simply add another StatBox component and pass it the appropriate props. You can adjust the layout by modifying the gridColumn and gridRow properties.
 
 Modify Chart Data: You can customize the charts by updating the data passed to LineChart, BarChart, and GeographyChart. Just replace the sample data in mockData.js or integrate a real data source like an API.
 
 Styling: Modify the colors, typography, and other UI elements via the theme.js file. The theme configuration uses Material-UI’s theme provider for dynamic styling.
 
-Contributing
+# Contributing
 We welcome contributions! If you’d like to improve or add features to this project, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch:
 bash
 Copy code
-git checkout -b feature-branch
-3. Make your changes and commit:
-bash
-Copy code
-git commit -m "Add new feature or fix bug"
-4. Push to your branch:
-bash
-Copy code
-git push origin feature-branch
-5. Create a pull request on GitHub.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
-Material-UI (MUI): For providing a highly customizable, ready-to-use set of React components that follow Material Design principles.
-React: For creating a declarative and component-based way to build UIs.
-Chart.js / Recharts: For providing the tools to create interactive and beautiful charts.
-Future Improvements
-Real-time data integration: Integrate with backend APIs to fetch live data for transactions, metrics, and charts.
-User Authentication: Add authentication (e.g., via Firebase or JWT) to allow different roles (Admin, User).
-Export Reports: Implement functionality to generate and export reports in various formats (PDF, Excel).
+        git checkout -b feature-branch
+4. Make your changes and commit:
+bash
+Copy code
+
+        git commit -m "Add new feature or fix bug"
+6. Push to your branch:
+bash
+Copy code
+
+          git push origin feature-branch
+8. Create a pull request on GitHub.
+
+
+# Acknowledgments
+- Material-UI (MUI): For providing a highly customizable, ready-to-use set of React components that follow Material Design principles.
+- React: For creating a declarative and component-based way to build UIs.
+- Nivo: For providing the tools to create interactive and beautiful charts.
+- fullCalendar: For providing the tools to create interactive calendar
+# Future Improvements
+- Real-time data integration: Integrate with backend APIs to fetch live data for transactions, metrics, and charts.
+- User Authentication: Add authentication (e.g., via Firebase or JWT) to allow different roles (Admin, User).
+- Export Reports: Implement functionality to generate and export reports in various formats (PDF, Excel).
